@@ -1,0 +1,43 @@
+/* Seção 02 — texto editorial e sequência das idades. */
+.arrival {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(300px, 32%) minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+  padding: 42px 0 42px 6%;
+  min-height: clamp(480px, 37vw, 660px);
+  background: #0b0f0e;
+  overflow: hidden;
+  border-bottom: 1px solid #aaa39538;
+}
+.arrival-copy { position: relative; z-index: 2; padding: 0 12px 0 0; }
+.arrival-number { font-size: .875rem; font-weight: 500; color: #d6d0c5; margin: 0 0 10px; }
+.arrival h2 { font-size: clamp(2.7rem, 4.15vw, 4.5rem); line-height: .99; letter-spacing: -.035em; margin-bottom: 22px; }
+.arrival h2 em { color: #c6a265; }
+.arrival-copy > p:not(.arrival-number) { font-size: clamp(.9375rem, 1.2vw, 1.0625rem); line-height: 1.55; margin: 0 0 24px; color: #ebe8e0; }
+.arrival-copy > p:last-child { margin-bottom: 0; }
+.arrival-rule { display: block; width: 44px; border-top: 2px solid #b59452; margin: 0 0 25px; }
+.arrival-visual { position: absolute; z-index: 1; inset: 0 0 0 29%; margin: 0; overflow: hidden; }
+.arrival-visual img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+.arrival-visual:after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg,#0b0f0e,rgba(11,15,14,.55) 9%,transparent 25%),linear-gradient(0deg,#0b0f0e90,transparent 20%); }
+@media(min-width:1800px) { .arrival { grid-template-columns: minmax(380px,32%) 1fr; } }
+@media(max-width:1000px) and (min-width:761px) {
+  .arrival { grid-template-columns: 38% 1fr; padding-left: 5%; min-height: 520px; }
+  .arrival-visual { left: 34%; }
+  .arrival-visual img { object-fit: contain; object-position: center bottom; }
+  .arrival-copy>p:not(.arrival-number) { font-size: .9375rem; }
+}
+@media(max-width:760px) {
+  .arrival { display: flex; flex-direction: column; align-items: stretch; padding: 34px 0 0; min-height: 0; gap: 0; }
+  .arrival-copy { padding: 0 7%; }
+  .arrival-number { margin-bottom: 14px; }
+  .arrival h2 { font-size: clamp(2.9rem, 11vw, 4.2rem); margin-bottom: 24px; }
+  .arrival-copy>p:not(.arrival-number) { font-size: 1rem; line-height: 1.6; max-width: 460px; }
+  .desktop-break { display: none; }
+  .arrival-rule { margin-bottom: 24px; }
+  .arrival-visual { position: relative; inset: auto; width: 100%; margin-top: 8px; aspect-ratio: 3 / 2; }
+  .arrival-visual img { height: auto; object-fit: contain; }
+  .arrival-visual:after { background: linear-gradient(180deg,#0b0f0e,transparent 24%),linear-gradient(0deg,#0b0f0e88,transparent 17%); }
+}

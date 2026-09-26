@@ -1,0 +1,9 @@
+# Seção 02 — Você recebeu uma vida
+
+Texto à esquerda, sequência de seis idades à direita, paisagem integrada ao fundo carvão e detalhe dourado. Em celulares a imagem aparece inteira abaixo do texto. Verificação visual realizada em 1440 e 390 pixels de largura, sem rolagem horizontal e com imagem carregada.
+
+Ativo: `site/assets/jornada-idades.png`. Criado com a ferramenta integrada imagegen, sem CLI. O ativo é uma ilustração fotográfica de fases da vida, não uma biografia ou fotografia do pesquisador.
+
+Prompt utilizado:
+
+Use case: photorealistic-natural. Asset type: clean photographic illustration for website section 'You received a life', landscape 1536x1024. Cinematic editorial photorealistic composite showing exactly six distinct life stages of one male human, side by side from left to right, all facing and moving to the right: a clothed crawling baby, an elementary-school boy walking with small backpack, a teenage boy walking with backpack, a young adult man walking, a middle-aged man walking, an elderly man with grey hair walking with cane. All six full bodies and feet visible, natural anatomically correct proportions, distinct silhouettes with space between them, progression short to tall then slightly stooped elderly man. Position the figures across the lower two-thirds of image, from 8% to 92% horizontal, ground at 90% height. Natural simple clothes in charcoal, beige, grey, muted blue, no logos. Background alpine mountains and conifer forest in sunset haze, amber clouds, charcoal shadows; match a contemplative premium website palette charcoal #11110f, muted gold #B59452, ivory. Same coherent side lighting from upper right. Clear life sequence, realistic human anatomy and faces. Landscape scene itself, not a mockup. No text, no lettering, no numbers, no buttons, no arrows, no UI, no frames. Left and bottom edges fade naturally into deep near-black landscape shadows.
