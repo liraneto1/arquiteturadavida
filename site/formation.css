@@ -1,0 +1,34 @@
+/* Seção 03 — as influências da formação, como diagrama legível. */
+.formation { display:grid; grid-template-columns:minmax(300px,35%) minmax(0,1fr); align-items:center; gap:1%; padding:30px 5% 30px 6%; background:#0b0f0e; border-top:0; border-bottom:1px solid #aaa39538; }
+.formation-copy { position:relative; padding:35px 0; }
+.formation-number { color:#d6d0c5; font-size:.875rem; margin:0 0 28px; }
+.formation h2 { font-size:clamp(2.5rem,3.75vw,4rem); line-height:1.05; letter-spacing:-.035em; margin:0 0 30px; }
+.formation h2 em { color:#c6a265; }
+.formation-rule { display:block; width:44px; border-top:2px solid #b59452; margin-bottom:24px; }
+.formation-copy>p:last-child { font-size:1.0625rem; color:#ebe8e0; }
+.influence-map { position:relative; width:100%; aspect-ratio:700/550; min-height:480px; isolation:isolate; }
+.formation-child { position:absolute; left:31%; top:17%; width:38%; height:75%; object-fit:cover; object-position:center top; mask-image:linear-gradient(transparent,#000 8%,#000 75%,transparent 100%),linear-gradient(90deg,transparent,#000 18%,#000 82%,transparent); mask-composite:intersect; }
+.influence-lines { position:absolute; inset:0; width:100%; height:100%; z-index:2; pointer-events:none; }
+.influence-list { list-style:none; margin:0; padding:0; }
+.influence { position:absolute; transform:translate(-50%,-50%); display:flex; flex-direction:column; align-items:center; gap:5px; text-align:center; z-index:3; font:clamp(1rem,1.5vw,1.35rem)/1.2 var(--serif); color:#e9e3d7; }
+.influence svg { width:31px; height:31px; fill:none; stroke:#c6a265; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.influence.family { left:50%; top:7%; }
+.influence.left { left:14%; }.influence.right { left:86%; }
+.influence.row1 { top:23%; }.influence.row2 { top:41%; }.influence.row3 { top:59%; }.influence.row4 { top:77%; }
+.influence.bottom { top:94%; }.influence.relations { left:35%; }.influence.expectations { left:68%; }
+@media(max-width:1000px) { .formation { grid-template-columns:34% 1fr; padding-left:5%; padding-right:3%; }.formation h2{font-size:2.55rem}.influence-map{min-height:470px}.influence{font-size:1rem}.influence svg{width:27px;height:27px} }
+@media(max-width:760px) {
+  .formation { display:block; padding:35px 0 22px; }
+  .formation-copy { padding:0 7%; }
+  .formation-number { margin-bottom:22px; }
+  .formation h2 { font-size:clamp(2.6rem,9.8vw,3.8rem); margin-bottom:25px; }
+  .influence-map { margin-top:30px; min-height:0; height:510px; aspect-ratio:auto; }
+  .formation-child { left:29%; width:42%; top:22%; height:63%; object-fit:cover; }
+  .influence { font-family:var(--sans); font-size:.875rem; gap:7px; }
+  .influence svg { width:25px; height:25px; }
+  .influence.family { top:9%; }
+  .influence.left { left:16%; }.influence.right { left:84%; }
+  .influence.bottom { top:94%; }.influence.relations{left:25%}.influence.expectations{left:75%}
+  .influence-lines { opacity:.7; }
+}
+@media(max-width:360px){.influence{font-size:.8125rem}.influence-map{height:480px}}
