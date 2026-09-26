@@ -1,4 +1,4 @@
-/* Seção 04: um ciclo por linha; personagem à esquerda, conteúdo à direita. */
+/* Seção 04: um ciclo por linha, alternando personagem e conteúdo. */
 .cycles { background:#0b0f0e; padding:40px 6% 70px; }
 .cycles>.eyebrow { text-align:left; margin-bottom:0; }
 .cycles>h2 { font-size:clamp(2.7rem,4.3vw,4.5rem); margin:0 0 42px; }
@@ -15,6 +15,8 @@
 .cycle-photo { display:block; position:static; width:200px; height:200px; justify-self:end; margin-right:48px; background-image:url(assets/ciclos-personagens-transparentes.png); background-size:300% 300%; background-position:var(--tile-x) var(--tile-y); mask-image:linear-gradient(#000 88%,transparent); }
 .cycle-shade { display:none; }
 .cycle-copy { display:flex; flex-direction:column; align-items:flex-start; text-align:left; width:auto; padding:0 0 0 48px; position:relative; }
+.cycle-card:nth-child(even) .cycle-photo { grid-column:2; grid-row:1; justify-self:start; margin-right:0; margin-left:48px; }
+.cycle-card:nth-child(even) .cycle-copy { grid-column:1; grid-row:1; align-items:flex-end; text-align:right; padding:0 48px 0 0; }
 .cycle-list .cycle-age { color:#e0b77b; border:1px solid #aaa39545; border-radius:999px; padding:1px 15px; font:1.55rem/1.15 var(--serif); }
 .cycle-list .cycle-name { color:#f2efe7; font:2rem/1.1 var(--serif); margin:6px 0 8px; letter-spacing:-.025em; }
 .cycle-list .cycle-description { color:#e6e3db; font:.9375rem/1.5 var(--sans); }
@@ -22,6 +24,7 @@
 .cycle-card summary:hover .cycle-arrow { background:#b5945228; }
 .cycle-card details[open] .cycle-arrow { transform:rotate(90deg); }
 .cycle-question { margin:0 0 10px calc(50% + 30px); padding:20px; background:#171b16; border-left:1px solid #b5945255; }
+.cycle-card:nth-child(even) .cycle-question { margin:0 calc(50% + 30px) 10px 0; border-left:0; border-right:1px solid #b5945255; text-align:right; }
 .cycle-question .fine { letter-spacing:.12em; color:#d2b27d; font-size:.75rem; margin-bottom:10px; }
 .cycle-question>p:last-child { font:1.4rem/1.4 var(--serif); margin:0; }
 .cycle-list li.selected { background:#b5945209; outline:1px solid #e0b77b; outline-offset:4px; border-radius:8px; }
@@ -32,16 +35,19 @@
   .cycles>.eyebrow { margin-bottom:22px; }
   .cycles>h2 { font-size:clamp(2.8rem,10vw,4rem); margin-bottom:35px; text-align:left; }
   .cycle-list { gap:18px; }
-  .cycle-list:before { left:calc(44% - 1px); }
-  .cycle-list li:before { left:calc(44% - 6px); width:11px; height:11px; top:94px; box-shadow:0 0 0 4px #0b0f0e,0 0 0 5px #b59452; }
-  .cycle-card summary { grid-template-columns:44% 56%; min-height:205px; padding:8px 0; }
+  .cycle-list:before { left:calc(50% - 1px); }
+  .cycle-list li:before { left:calc(50% - 6px); width:11px; height:11px; top:94px; box-shadow:0 0 0 4px #0b0f0e,0 0 0 5px #b59452; }
+  .cycle-card summary { grid-template-columns:1fr 1fr; min-height:215px; padding:8px 0; }
   .cycle-photo { width:clamp(96px,30vw,150px); height:auto; aspect-ratio:1; max-width:calc(100% - 18px); margin-right:18px; }
-  .cycle-copy { padding-left:22px; }
+  .cycle-copy { padding-left:18px; min-width:0; }
+  .cycle-card:nth-child(even) .cycle-photo { margin-left:18px; }
+  .cycle-card:nth-child(even) .cycle-copy { padding:0 18px 0 0; }
   .cycle-list .cycle-age { font-size:1.3rem; padding:1px 12px; }
-  .cycle-list .cycle-name { font-size:clamp(1.4rem,5.5vw,1.8rem); }
+  .cycle-list .cycle-name { font-size:clamp(1.25rem,5.2vw,1.8rem); overflow-wrap:anywhere; }
   .cycle-list .cycle-description { font-size:.875rem; line-height:1.5; }
   .cycle-list .cycle-description br { display:none; }
-  .cycle-question { margin-left:calc(44% + 16px); padding:15px 10px; }
+  .cycle-question { margin-left:calc(50% + 12px); padding:15px 10px; }
+  .cycle-card:nth-child(even) .cycle-question { margin-right:calc(50% + 12px); margin-left:0; }
   .cycle-question>p:last-child { font-size:1.15rem; }
   .cycle-closing { margin:35px auto 0; font-size:clamp(1rem,4.3vw,1.25rem); line-height:1.8; }
   .cycles .locator { margin-top:40px; }
