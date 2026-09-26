@@ -1,0 +1,54 @@
+/* Seção 04 — cartões alternados em uma linha cronológica. */
+.cycles { background:#0b0f0e; padding:40px 6% 70px; }
+.cycles>.eyebrow { text-align:left; margin-bottom:0; }
+.cycles>h2 { font-size:clamp(2.7rem,4.3vw,4.5rem); margin:0 0 42px; }
+.cycles>h2 em { color:#c6a265; }
+.cycle-journey { position:relative; max-width:1280px; margin:auto; }
+.cycle-list { position:relative; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px 60px; border:0; margin:0; padding:10px 0 0; list-style:none; }
+.cycle-list:before { content:''; position:absolute; left:calc(50% - 1px); top:0; bottom:0; width:2px; background:linear-gradient(#b59452,#d5aa62 90%,transparent); }
+.cycle-list li { padding:0; border:0; grid-row:var(--row); background:none; min-width:0; text-align:left; }
+.cycle-list li.right-card { grid-column:2; }.cycle-list li.left-card { grid-column:1; }
+.cycle-list li:before { width:17px; height:17px; top:25px; left:-39px; border:2px solid #d8b270; background:#f7e5be; box-shadow:0 0 0 7px #0b0f0e,0 0 0 8px #b59452,0 0 18px #d1a15b88; z-index:3; }
+.cycle-list li.left-card:before { display:none; }
+.cycle-card details { border-bottom:1px solid #b59452; border-radius:0 0 0 42px; overflow:hidden; }
+.cycle-card.left-card details { border-radius:0 0 42px 0; }
+.cycle-card summary { display:block; cursor:pointer; position:relative; min-height:270px; isolation:isolate; padding:24px 20px; }
+.cycle-card summary::-webkit-details-marker { display:none; }
+.cycle-photo { position:absolute; top:0; bottom:0; right:0; width:62%; background-image:url(assets/ciclos-retratos.png); background-size:300% 300%; background-position:var(--tile-x) var(--tile-y); z-index:-2; }
+.cycle-photo { mask-image:linear-gradient(90deg,transparent,#000 30%); }
+.cycle-card.left-card .cycle-photo { left:0; right:auto; mask-image:linear-gradient(270deg,transparent,#000 30%); }
+.cycle-card summary:focus-visible { outline-offset:-3px; }
+.cycle-shade { position:absolute; inset:0; background:linear-gradient(90deg,#0b0f0e 8%,#0b0f0ee6 34%,#0b0f0e50 54%,transparent 77%),linear-gradient(0deg,#0b0f0e88,transparent 45%); z-index:-1; }
+.cycle-card.left-card .cycle-shade { background:linear-gradient(270deg,#0b0f0e 8%,#0b0f0ee6 34%,#0b0f0e50 54%,transparent 77%),linear-gradient(0deg,#0b0f0e88,transparent 45%); }
+.cycle-copy { display:flex; flex-direction:column; align-items:center; text-align:center; width:49%; position:relative; }
+.left-card .cycle-copy { margin-left:auto; }
+.cycle-list .cycle-age { color:#e0b77b; border:1px solid #aaa39545; border-radius:999px; padding:0 17px; font:1.7rem/1.1 var(--serif); }
+.cycle-list .cycle-name { color:#f2efe7; font:2.2rem/1.08 var(--serif); margin:5px 0 8px; letter-spacing:-.03em; }
+.cycle-list .cycle-description { color:#e6e3db; font:.9375rem/1.5 var(--sans); }
+.cycle-list .cycle-arrow { display:grid; place-items:center; border:1.5px solid #dbb16d; color:#efcf94; width:44px; height:44px; border-radius:50%; font:1.65rem/1 var(--sans); margin-top:15px; }
+.cycle-card summary:hover .cycle-arrow { background:#b5945228; }
+.cycle-card details[open] .cycle-arrow { transform:rotate(90deg); }
+.cycle-question { padding:22px 25px; background:#171b16; border-top:1px solid #b5945255; }
+.cycle-question .fine { letter-spacing:.12em; color:#d2b27d; font-size:.75rem; margin-bottom:10px; }
+.cycle-question>p:last-child { font:1.5rem/1.3 var(--serif); margin:0; }
+.cycle-list li.selected { background:none; outline:2px solid #e0b77b; outline-offset:7px; border-radius:6px; }
+.cycle-closing { position:absolute; bottom:36px; left:4%; width:39%; font:1.5rem/1.55 var(--sans); text-align:left; color:#ebe7df; }
+.cycles .locator { margin-top:65px; }
+@media(max-width:1100px){.cycles{padding-left:4%;padding-right:4%}.cycle-list{column-gap:44px}.cycle-list li:before{left:-31px}.cycle-card summary{padding:20px 10px;min-height:255px}.cycle-list .cycle-name{font-size:1.8rem}.cycle-list .cycle-description{font-size:.875rem}.cycle-closing{font-size:1.15rem}}
+@media(max-width:760px){
+  .cycles { padding:35px 6% 55px; }
+  .cycles>.eyebrow { margin-bottom:22px; }
+  .cycles>h2 { font-size:clamp(2.8rem,10vw,4rem); margin-bottom:35px; text-align:left; }
+  .cycle-list { display:flex; flex-direction:column; gap:22px; padding-left:24px; }
+  .cycle-list:before { left:2px; }
+  .cycle-list li:before { display:block!important; left:-28px; top:24px; width:13px; height:13px; box-shadow:0 0 0 4px #0b0f0e,0 0 0 5px #b59452; }
+  .cycle-card details,.cycle-card.left-card details { border-radius:0 0 0 30px; }
+  .cycle-card summary { min-height:245px; padding:20px 10px; }
+  .cycle-card.left-card .cycle-photo { left:auto; right:0; mask-image:linear-gradient(90deg,transparent,#000 30%); }
+  .cycle-card.left-card .cycle-shade { background:linear-gradient(90deg,#0b0f0e 8%,#0b0f0ee6 34%,#0b0f0e50 54%,transparent 77%),linear-gradient(0deg,#0b0f0e88,transparent 45%); }
+  .cycle-copy,.left-card .cycle-copy { width:54%; margin-left:0; }
+  .cycle-list .cycle-age{font-size:1.4rem}.cycle-list .cycle-name{font-size:1.8rem}.cycle-list .cycle-description{font-size:.875rem}.cycle-list .cycle-description br{display:none}
+  .cycle-photo{width:67%}
+  .cycle-closing { position:static; width:auto; font-size:1.125rem; margin:38px 0 0 24px; }
+  .cycles .locator { margin-top:40px; }
+}

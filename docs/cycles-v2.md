@@ -1,0 +1,13 @@
+# Seção 04 — Ciclos da Vida
+
+Linha vertical dourada, nove cartões fotográficos alternados e faixa etária, nome e síntese editorial em texto HTML. No celular, a sequência segue a ordem cronológica em uma coluna. Cada seta abre uma pergunta de observação com um controle nativo acessível também sem JavaScript.
+
+Localizador preservado: calcula a idade localmente, destaca o cartão e oferece um link para ele. Idades a partir de 56 continuam em Integrar. A nota de integridade sobre os setênios permanece visível.
+
+Verificações: faixas e entradas inválidas passaram nos três testes existentes; desktop 1440 e celular 390 sem rolagem horizontal; ordem dos nove ciclos correta; idade 42 destaca e aponta para Reorientar. Composição inspecionada nas duas larguras.
+
+Ativo: `site/assets/ciclos-retratos.png`. Nove retratos ilustrativos em um arquivo, com cada região exibida por CSS. Gerado pela ferramenta integrada imagegen, sem CLI e sem identificação de pessoas reais.
+
+Prompt utilizado:
+
+Asset type: a single square 1536x1536 photographic SPRITE SHEET for nine website life-stage cards. Exactly 3 columns by 3 rows of equal square photographs, tightly tiled edge to edge with absolutely no gutters, no border, no text, no labels, no numbers. Each tile must have one distinct male subject showing a coherent progression of the same person's life, centered within its own square, waist-up where applicable, all facing right or three-quarter right looking toward the horizon. Order strictly left-to-right then top-to-bottom: TOP LEFT baby about 1 year old, clothed, sitting/crawling on ground, full body; TOP CENTER schoolboy age 10 wearing backpack; TOP RIGHT adolescent boy age 17 wearing grey hoodie; MIDDLE LEFT young adult man age 24 with backpack; MIDDLE CENTER adult man age 31 in simple blue shirt; MIDDLE RIGHT man age 38 in charcoal casual shirt; BOTTOM LEFT mature man age 45 with a little grey at temples; BOTTOM CENTER man age 52, more grey in hair, thoughtful expression; BOTTOM RIGHT elderly man age 68 with grey hair, seated and gazing across mountains. Each tile self-contained, full subject head with comfortable margin and no cut head. Same visual style across all nine: photorealistic cinematic editorial, alpine mountains and evergreen forests at amber sunset, charcoal shadows, muted mineral gold light, natural skin, grounded and contemplative. Some middle adult tiles may include distant subtle city skylines. No religious symbols, no fake UI, no captions. Layout is a precise 3x3 texture atlas so each equal ninth can be displayed independently using CSS. Do not merge tiles, do not place people across tile boundaries, do not add a tenth person.

@@ -33,5 +33,6 @@ form.addEventListener('submit', e => {
   const question = document.createElement('p'); question.textContent = cycle.question;
   const note = document.createElement('p'); note.className = 'muted'; note.textContent = 'Isso não define quem você é. Sua história tem prioridade sobre o modelo.';
   result.append(label, title, question, note);
+  const link = document.createElement('a'); link.className = 'editorial-link'; link.href = `#ciclo-${cycle.index}`; link.textContent = 'Ver este ciclo →'; result.append(link);
   document.querySelectorAll('.cycle-list li')[cycle.index].classList.add('selected');
 });
