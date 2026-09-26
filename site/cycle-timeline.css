@@ -14,7 +14,7 @@
 .cycle-card.left-card details { border-radius:0 0 42px 0; }
 .cycle-card summary { display:block; cursor:pointer; position:relative; min-height:270px; isolation:isolate; padding:24px 20px; }
 .cycle-card summary::-webkit-details-marker { display:none; }
-.cycle-photo { position:absolute; top:0; bottom:0; right:0; width:62%; background-image:url(assets/ciclos-retratos.png); background-size:300% 300%; background-position:var(--tile-x) var(--tile-y); z-index:-2; }
+.cycle-photo { position:absolute; top:0; bottom:0; right:0; width:62%; background-image:url(assets/ciclos-personagens-transparentes.png); background-size:300% 300%; background-position:var(--tile-x) var(--tile-y); z-index:-2; }
 .cycle-photo { mask-image:linear-gradient(90deg,transparent,#000 30%); }
 .cycle-card.left-card .cycle-photo { left:0; right:auto; mask-image:linear-gradient(270deg,transparent,#000 30%); }
 .cycle-card summary:focus-visible { outline-offset:-3px; }
