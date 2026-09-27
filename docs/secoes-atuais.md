@@ -11,7 +11,7 @@ Identificações numeradas conforme a ordem de leitura. Estilo compartilhado em 
 - 07 · CICLOS DA VIDA
 - 08 · A ARQUITETURA INVISÍVEL
 - 09 · PADRÕES
-- 10 · DESPERTAR
+- 10 · MINHA JORNADA
 - 11 · O ESPELHO
 - 12 · CONSCIÊNCIA EM PRÁTICA
 - 13 · PROPÓSITO
