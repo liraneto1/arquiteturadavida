@@ -15,3 +15,9 @@ main>section.purpose>.section-label{position:absolute;top:28px;left:max(7%,calc(
 @media(max-width:1000px){main>section.purpose>.section-label{left:6%;right:6%}}
 @media(max-width:760px){main>section.purpose{padding-top:90px}main>section.purpose>.section-label{top:25px;left:7%;right:7%}}
 @media(max-width:760px){main>section>.section-label{font-size:.6875rem;letter-spacing:.16em;gap:12px;margin-bottom:28px}main>section>.section-label:after{flex-basis:25px}main>section.hero>.section-label{left:7%;width:86%;top:25px}main>section.patterns>.section-label{left:7%;width:86%;top:28px}main>section.arrival>.section-label,main>section.architecture>.section-label{margin-left:7%;width:86%;padding:0}main>section.cycles>.section-label{margin-bottom:40px}main>section.awakening,main>section.mirror{row-gap:28px}main>section.awakening>.section-label,main>section.mirror>.section-label{margin-bottom:0}main>section.awakening>.awakening-path{margin-top:10px}}
+/* Posição compartilhada dos títulos em todas as seções. */
+main>section[class][class]{position:relative;padding-top:90px}
+main>section[class]>.section-label{position:absolute;top:28px;left:6%;right:6%;width:auto;margin:0;padding:0;display:flex;align-items:center;gap:20px;font:500 .75rem/1.6 var(--sans);letter-spacing:.23em;text-transform:uppercase;text-align:left;z-index:3}
+main>section[class]>.section-label:after{content:'';display:block;flex:0 0 45px;height:1px;background:var(--gold);border:0;margin:0}
+@media(max-width:760px){main>section[class][class]{padding-top:85px}main>section[class]>.section-label{top:25px;left:7%;right:7%;width:auto;margin:0;font-size:.6875rem;letter-spacing:.16em;gap:12px}main>section[class]>.section-label:after{flex-basis:25px}}
+main>section[class]>.section-label{grid-column:auto;grid-row:auto}
