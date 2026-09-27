@@ -1,7 +1,7 @@
 /* Seção 03 — apresentação simples da Arquitetura da Vida. */
 .formation{display:block;padding:48px 6% 46px;background:#0b0f0e;border-top:0;border-bottom:1px solid #aaa39538;text-align:center}
 .formation-heading{max-width:790px;margin:0 auto}
-.formation .eyebrow{font-size:.65rem;letter-spacing:.22em;color:#c3b8a4;margin-bottom:20px}
+.formation .eyebrow{font-size:.65rem;letter-spacing:.22em;color:#c3b8a4;margin-bottom:20px;text-align:left}
 .formation .eyebrow:after{display:none}
 .formation h2{font-size:clamp(2.8rem,4.3vw,4.7rem);line-height:1.05;margin:0 0 20px;letter-spacing:-.035em}
 .formation h2 em{color:#c6a265}
