@@ -1,0 +1,13 @@
+/* Identificação única das seções, na ordem de leitura da página. */
+main>section>.section-label{grid-column:1/-1;position:relative;z-index:3;align-self:start;justify-self:stretch;display:flex;align-items:center;gap:20px;width:100%;font:500 .75rem/1.6 var(--sans);letter-spacing:.23em;text-transform:uppercase;text-align:left;color:var(--ivory);margin:0 0 32px;padding:0}
+main>section>.section-label:after{content:'';display:block;flex:0 0 45px;height:1px;background:var(--gold);border:0;margin:0}
+main>section.light>.section-label,main>section.fundamental-concept>.section-label{color:#1a1b17}
+main>section.hero>.section-label{position:absolute;top:28px;left:6%;width:88%;margin:0;text-shadow:0 1px 8px #000}
+main>section.patterns>.section-label{position:absolute;top:25px;left:6%;width:88%;margin:0}
+main>section.cycles>.section-label{margin-bottom:52px}
+main>section.formation>.section-label{margin-bottom:32px}
+main>section.arrival>.section-label{padding-right:6%}
+main>section.awakening,main>section.mirror{row-gap:0}
+main>section.awakening>.awakening-path{margin-top:48px}
+main>section.architecture>.section-label{margin-bottom:36px}
+@media(max-width:760px){main>section>.section-label{font-size:.6875rem;letter-spacing:.16em;gap:12px;margin-bottom:28px}main>section>.section-label:after{flex-basis:25px}main>section.hero>.section-label{left:7%;width:86%;top:25px}main>section.patterns>.section-label{left:7%;width:86%;top:28px}main>section.arrival>.section-label,main>section.architecture>.section-label{margin-left:7%;width:86%;padding:0}main>section.cycles>.section-label{margin-bottom:40px}main>section.awakening,main>section.mirror{row-gap:28px}main>section.awakening>.section-label,main>section.mirror>.section-label{margin-bottom:0}main>section.awakening>.awakening-path{margin-top:10px}}
