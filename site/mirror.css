@@ -1,17 +1,21 @@
-/* Seção 08 — uma pausa clara para observar a própria história. */
-.mirror{display:grid;grid-template-columns:minmax(0,29fr) minmax(0,43fr) minmax(0,28fr);align-items:center;gap:32px;padding:38px 6%;background:#f5f2e9;border-top:1px solid #11110f18;border-bottom:1px solid #11110f18;color:#1a1b17}
-.mirror .eyebrow{font-size:.7rem;letter-spacing:.2em;margin-bottom:24px}
-.mirror .eyebrow:after{width:40px;margin-left:16px}
-.mirror h2{font-size:clamp(2.4rem,3.1vw,3.7rem);line-height:1.01;margin-bottom:22px}
+/* Seção 11 — observar a própria história. */
+.section.mirror{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:start;column-gap:8%;padding:32px 6% 58px;background:#f5f2e9;color:#1a1b17;border-top:1px solid #11110f18;border-bottom:1px solid #11110f18}
+.mirror-copy{grid-column:1;grid-row:2}
+.mirror h2{font-size:clamp(2.8rem,4.7vw,5.2rem);line-height:1.02;letter-spacing:-.04em;margin:10px 0 24px;text-wrap:balance}
 .mirror h2 em{color:#a77a3d}
-.mirror .intro{font:clamp(1.1rem,1.45vw,1.45rem)/1.3 var(--serif);max-width:270px;margin:0}
-.mirror-visual{position:relative;isolation:isolate;margin:0;align-self:stretch;min-height:365px;overflow:hidden;background:#30251e}
-.mirror-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% center}
-.mirror-visual:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(220deg,#140d0870,transparent 42%)}
-.mirror-visual figcaption{position:absolute;right:6%;top:9%;z-index:2;color:#e2b573;font-size:clamp(.7rem,1.1vw,1rem);line-height:1.5;letter-spacing:.08em;text-transform:uppercase;text-shadow:0 1px 5px #000}
-.mirror .reflection{font:clamp(1.08rem,1.5vw,1.55rem)/1.48 var(--serif);margin:0;padding:0;list-style:none}
-.mirror-rule{display:block;width:43px;border-top:1px solid #a77a3d;margin:25px 0 22px}
-.mirror .question-small{font:clamp(1.55rem,2vw,2.1rem)/1.15 var(--serif);margin:0 0 18px;letter-spacing:-.03em}
-.mirror-status{font-size:.59rem;line-height:1.8;letter-spacing:.15em;text-transform:uppercase;color:#696457;margin:0}
-@media(max-width:1050px) and (min-width:761px){.mirror{gap:23px;padding:35px 4%;grid-template-columns:29fr 40fr 31fr}.mirror h2{font-size:2.1rem}.mirror .eyebrow{font-size:.6rem;letter-spacing:.15em}.mirror .eyebrow:after{width:25px;margin-left:10px}.mirror-visual{min-height:340px}.mirror .intro{font-size:1.1rem}.mirror .reflection{font-size:1.1rem}.mirror-status{font-size:.54rem}}
-@media(max-width:760px){.mirror{display:flex;flex-direction:column;align-items:stretch;gap:30px;padding:38px 7% 40px}.mirror h2{font-size:clamp(2.7rem,10vw,4rem)}.mirror .intro{max-width:360px;font-size:1.3rem}.mirror-visual{min-height:0;aspect-ratio:1.1}.mirror-visual figcaption{font-size:.75rem;right:5%;top:7%}.mirror .reflection{font-size:1.35rem;line-height:1.5}.mirror .question-small{font-size:1.9rem}.mirror-status{font-size:.6rem}}
+.mirror .intro{font:clamp(1.15rem,1.6vw,1.6rem)/1.45 var(--serif);max-width:490px;margin:0;color:#635d52;text-wrap:pretty}
+.mirror-visual{grid-column:2;grid-row:2/4;position:relative;isolation:isolate;margin:10px 10px 0;min-height:530px;align-self:stretch;background:#30251e;border-radius:48% 48% 4px 4px;box-shadow:0 0 0 8px #f5f2e9,0 0 0 9px #b5945270}
+.mirror-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:57% center;border-radius:inherit}
+.mirror-visual:after{content:'';position:absolute;inset:0;z-index:1;border-radius:inherit;pointer-events:none;background:linear-gradient(0deg,#100e0cdb,transparent 50%)}
+.mirror-visual figcaption{position:absolute;bottom:30px;left:10%;right:10%;z-index:2;text-align:center;font:clamp(1.6rem,2.5vw,2.7rem)/1.08 var(--serif);color:#f5f2e9;letter-spacing:-.02em}
+.mirror-visual figcaption em{color:#dab578}
+.mirror-reflection{grid-column:1;grid-row:3;margin-top:30px}
+.mirror .reflection{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;list-style:none;counter-reset:reflection;margin:0;padding:0;font:clamp(1.12rem,1.55vw,1.5rem)/1.25 var(--serif)}
+.mirror .reflection li{counter-increment:reflection;display:flex;align-items:baseline;gap:12px;border-top:1px solid #b5945245;padding:13px 0}
+.mirror .reflection li:before{content:counter(reflection,decimal-leading-zero);font:400 .6rem/1 var(--sans);letter-spacing:.06em;color:#a77a3d;flex-shrink:0}
+.mirror .reflection li:last-child{grid-column:1/-1}
+.mirror-rule{display:none}
+.mirror .question-small{font:clamp(1.4rem,2vw,2rem)/1.2 var(--serif);color:#a77a3d;margin:20px 0 0}
+@media(max-width:1050px) and (min-width:761px){.section.mirror{column-gap:5%}.mirror-visual{min-height:500px}.mirror .reflection{gap:0 14px}.mirror .reflection li{gap:8px}}
+@media(max-width:760px){.section.mirror{display:flex;flex-direction:column;align-items:stretch;padding:28px 7% 40px;gap:0}.mirror h2{font-size:clamp(2.6rem,9.8vw,4rem);margin-top:0}.mirror .intro{font-size:1.3rem;max-width:100%}.mirror-visual{min-height:0;aspect-ratio:1/1.05;margin:34px 9px 0;align-self:stretch;max-height:470px}.mirror-visual figcaption{font-size:2rem;bottom:25px}.mirror-reflection{margin-top:32px}.mirror .reflection{font-size:1.17rem;gap:0 15px}.mirror .reflection li{gap:9px;padding:13px 0}.mirror .question-small{font-size:1.7rem;margin-top:18px}}
+@media(max-width:760px){main>section.mirror.light>.section-label{margin-bottom:28px}}
