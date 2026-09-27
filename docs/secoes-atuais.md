@@ -12,7 +12,7 @@ Identificações numeradas conforme a ordem de leitura. Estilo compartilhado em 
 - 08 · A ARQUITETURA INVISÍVEL
 - 09 · PADRÕES
 - 10 · MINHA JORNADA
-- 11 · DESPERTAR
+- 11 · OBSERVAR
 - 12 · CONSCIÊNCIA EM PRÁTICA
 - 13 · PROPÓSITO
 - 14 · O CRIADOR / NOSSA COSMOVISÃO
