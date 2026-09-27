@@ -14,7 +14,7 @@ Identificações numeradas conforme a ordem de leitura. Estilo compartilhado em 
 - 10 · MINHA JORNADA
 - 11 · OBSERVAR
 - 12 · CONSTRUIR
-- 13 · PROPÓSITO
+- 13 · DESFRUTAR
 - 14 · O CRIADOR / NOSSA COSMOVISÃO
 - 15 · O PRESENTE
 - 16 · CONSTRUTOR DO REINO
