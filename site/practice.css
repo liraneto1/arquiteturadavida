@@ -1,4 +1,4 @@
-/* Seção 09 — do conhecimento à experiência. */
+/* Seção 12 — do conhecimento à experiência. */
 .practice{padding:35px 6% 28px;background:#f5f2e9;color:#1a1b17;border-top:0;border-bottom:1px solid #11110f18}
 .practice .eyebrow{font-size:.7rem;letter-spacing:.2em;margin-bottom:20px}
 .practice .eyebrow:after{width:42px;margin-left:18px}
@@ -18,3 +18,25 @@
 .practice-signature span{text-transform:uppercase;letter-spacing:.18em}
 @media(max-width:1050px) and (min-width:761px){.practice{padding:34px 4% 28px}.practice-intro{grid-template-columns:1fr 32px 1fr;gap:20px}.practice-words{font-size:8vw}.practice-transition{font-size:2.1rem}.practice-copy h3{font-size:2.25rem}.practice-copy p{font-size:1.25rem}.practice-path li{font-size:1rem}.practice-path{margin-left:-1%;margin-right:-1%}}
 @media(max-width:760px){.practice{padding:36px 7% 32px}.practice .eyebrow{font-size:.6rem;letter-spacing:.13em}.practice .eyebrow:after{width:25px;margin-left:12px}.practice-intro{grid-template-columns:minmax(0,1fr) 40px;gap:24px 12px}.practice-words{font-size:clamp(3.8rem,15vw,6.7rem)}.practice-transition{font-size:2.2rem;margin-top:10px}.practice-copy{grid-column:1/-1}.practice-copy h3{font-size:2.3rem;margin-bottom:15px}.practice-copy p{font-size:1.35rem}.practice-path{display:flex;flex-direction:column;gap:18px;margin:30px 0 0 8px}.practice-path:before{left:26px;right:auto;top:27px;bottom:27px;width:1px;height:auto}.practice-path li{flex-direction:row;gap:24px;text-align:left;font-size:1.45rem}.practice-icon{width:53px;height:53px;flex-shrink:0}.practice-path li:not(:last-child):after{display:none}.practice-signature{margin-top:32px;font-size:.65rem;text-wrap:balance}.practice-signature span{display:block}}
+
+/* Refinamento visual aprovado: hierarquia, etapas e conclusão. */
+
+.section.practice{padding:32px 6% 30px;background:radial-gradient(ellipse at 18% 25%,#fffdf780,transparent 60%),#f5f2e9}
+main>section.practice>.section-label{margin-bottom:44px}
+.practice-intro{grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:42px;align-items:center}
+.practice-words{font-size:clamp(4.5rem,9vw,9.5rem);line-height:.88;letter-spacing:-.06em}
+.practice-words span{color:#a29d91}.practice-words em{margin-top:8px}
+.practice-transition{display:grid;place-items:center;align-self:center;margin:0;width:64px;height:64px;border:1px solid #b5945260;border-radius:50%;font-size:2.6rem}
+.practice-copy h3{font-size:clamp(2.2rem,3.6vw,3.7rem);line-height:1.04;margin-bottom:22px}
+.practice-copy p{font-size:clamp(1.25rem,1.7vw,1.65rem);line-height:1.4;color:#6c6458;max-width:430px}
+.practice-path{margin:74px -2% 0;counter-reset:step}
+.practice-path:before{top:34px;background:linear-gradient(90deg,#b5945240,#a77a3d)}
+.practice-path li{counter-increment:step;gap:16px;font-size:clamp(1rem,1.6vw,1.5rem)}
+.practice-path li:before{content:counter(step,decimal-leading-zero);position:absolute;top:-25px;font:500 .6rem var(--sans);letter-spacing:.13em;color:#a77a3d}
+.practice-icon{width:68px;height:68px;box-shadow:0 0 0 7px #f5f2e9}
+.practice-icon svg{width:31px;height:31px}
+.practice-path li:not(:last-child):after{top:23px;color:#b59452}
+.practice-path li:last-child .practice-icon{background:#a77a3d;color:#fffaf0;border-color:#a77a3d}
+.practice-signature{margin-top:38px;padding-top:22px;border-top:1px solid #b5945235;color:#6c6458;font-size:.65rem}
+.practice-signature span{color:#1a1b17}
+@media(max-width:760px){.section.practice{padding:28px 7%}.practice-intro{grid-template-columns:1fr 46px;gap:26px 16px}.practice-words{font-size:clamp(3.8rem,17vw,6rem)}.practice-transition{width:44px;height:44px;font-size:2rem}.practice-copy{grid-column:1/-1}.practice-copy h3{font-size:2.3rem}.practice-copy p{font-size:1.35rem}.practice-path{margin:35px 0 0 22px;gap:22px}.practice-path:before{top:30px;bottom:30px;left:30px;width:1px;height:auto;background:#b5945260}.practice-path li{gap:22px;font-size:1.4rem}.practice-path li:before{top:23px;left:-26px;font-size:.55rem}.practice-icon{width:60px;height:60px}.practice-signature{line-height:1.8;margin-top:30px}}
