@@ -16,5 +16,4 @@ Identificações numeradas conforme a ordem de leitura. Estilo compartilhado em 
 - 12 · O PRESENTE
 - 13 · CONSTRUTOR DO REINO
 - 14 · CAPITAL DO REINO
-- 15 · FINITUDE
-- 16 · A PESQUISA CONTINUA
+- 15 · A PESQUISA CONTINUA
