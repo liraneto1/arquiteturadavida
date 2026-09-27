@@ -1,0 +1,39 @@
+/* Seção 05 — O Construtor do Reino. */
+.section.builder-concept{padding:32px 6% 48px;background:radial-gradient(ellipse at 20% 67%,#d6b36a18,transparent 40%),#f5f2e9}
+.builder-concept-top{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.builder-concept-label{display:flex;align-items:center;gap:22px;margin:0;font:500 .75rem/1.6 var(--sans);letter-spacing:.23em}
+.builder-concept-label:after{content:'';width:45px;height:1px;background:#b59452}
+.builder-concept-count{font:.65rem var(--sans);letter-spacing:.2em;color:#8f7b56;white-space:nowrap}
+.builder-concept-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:8%;align-items:center;margin-top:55px}
+.builder-concept-origin h3{font:400 clamp(3rem,5.6vw,6rem)/.98 var(--serif);letter-spacing:-.045em;margin:0;color:#9f998d}
+.builder-concept-origin h3 em{display:block;color:#a77a3d;margin-top:8px}
+.builder-concept-mark{width:230px;height:110px;margin-top:35px;display:block}
+.builder-concept-message{padding-left:42px;border-left:1px solid #b5945240}
+.builder-concept-statement{font:400 clamp(2rem,3vw,3.2rem)/1.12 var(--serif);letter-spacing:-.025em;margin:0 0 24px}
+.builder-concept-statement em{color:#a77a3d}
+.builder-concept-copy{font:1.5rem/1.4 var(--serif);color:#6c6458;max-width:550px;margin:0}
+.builder-concept-path{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:25px 0 0;margin:28px 0 0;border-top:1px solid #b5945240}
+.builder-concept-path li{display:flex;align-items:center;gap:15px;font:1.35rem/1.15 var(--serif)}
+.builder-concept-icon{width:52px;height:52px;flex-shrink:0;display:grid;place-items:center;border:1px solid #b5945270;border-radius:50%}
+.builder-concept-icon svg{width:28px;height:28px;fill:none;stroke:#a77a3d;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.builder-concept-path li:last-child .builder-concept-icon{background:#a77a3d;border-color:#a77a3d}
+.builder-concept-path li:last-child svg{stroke:#fffaf0}
+.builder-concept-path small{display:block;font:500 .55rem/1.5 var(--sans);letter-spacing:.15em;color:#8d744c;margin-bottom:7px}
+@media(max-width:760px){.section.builder-concept{padding:28px 7% 32px}
+.builder-concept-top{gap:10px}
+.builder-concept-label{font-size:.6rem;letter-spacing:.13em;gap:10px}
+.builder-concept-label:after{width:24px}
+.builder-concept-count{font-size:.58rem}
+.builder-concept-layout{grid-template-columns:1fr;gap:26px;margin-top:40px}
+.builder-concept-origin h3{font-size:3.5rem}
+.builder-concept-mark{width:170px;height:65px;margin-top:22px}
+.builder-concept-message{padding:0;border:0}
+.builder-concept-statement{font-size:2.2rem}
+.builder-concept-copy{font-size:1.35rem}
+.builder-concept-path{gap:20px;padding-top:24px;margin-top:26px}
+.builder-concept-path li{flex-direction:column;align-items:flex-start;gap:14px;font-size:1.22rem}
+}
+@media(max-width:380px){.builder-concept-label{font-size:.55rem;letter-spacing:.1em}
+.builder-concept-origin h3{font-size:3rem}
+}
+
