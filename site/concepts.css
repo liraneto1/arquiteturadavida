@@ -16,3 +16,10 @@
 .concept-rule{display:block;width:44px;border-top:1px solid #b59452;margin-bottom:20px}
 .concept-gifts{font-size:clamp(1rem,1.35vw,1.2rem);line-height:1.85;color:#ddd7cb;margin:0}
 @media(max-width:760px){.fundamental-concept{padding:32px 7% 36px}.concepts-label{font-size:.6rem;letter-spacing:.15em;margin-bottom:20px}.concepts-label:after{width:28px;margin-left:12px}.concept-layout{display:block}.concept-origin{min-height:145px;padding-left:0;margin-bottom:24px;justify-content:flex-start}.concept-origin h3{font-size:3.8rem}.concept-light{left:0;top:-70px;width:260px;height:245px}.concept-index{margin-bottom:12px}.concept-message{padding-top:4px}.concept-statement{font-size:2rem}.concept-gifts{font-size:1rem;line-height:1.8}}
+/* Segundo conceito — a construção da própria vida alcança outras vidas. */
+.concept-builder .concept-origin h3{font-size:clamp(2.8rem,4.4vw,5rem);line-height:1.03}
+.concept-builder-mark{display:flex;align-items:center;gap:45px;position:relative;width:max-content;margin:24px 0 0 4px}
+.concept-builder-mark:before{content:'';position:absolute;left:0;right:0;top:3px;height:1px;background:#b5945266}
+.concept-builder-mark span{position:relative;width:7px;height:7px;border:1px solid #d0ad73;border-radius:50%;background:#0b0f0e}
+.concept-builder-mark span:first-child{background:#ffeac3;box-shadow:0 0 15px 3px #d0a45566}
+@media(max-width:760px){.concept-builder .concept-origin{min-height:0;margin-bottom:28px}.concept-builder .concept-origin h3{font-size:clamp(2.6rem,10vw,3.8rem)}.concept-builder .concept-gifts br{display:none}.concept-builder .concept-gifts{max-width:360px}}
