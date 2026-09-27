@@ -23,3 +23,8 @@
 .concept-builder-mark span{position:relative;width:7px;height:7px;border:1px solid #d0ad73;border-radius:50%;background:#0b0f0e}
 .concept-builder-mark span:first-child{background:#ffeac3;box-shadow:0 0 15px 3px #d0a45566}
 @media(max-width:760px){.concept-builder .concept-origin{min-height:0;margin-bottom:28px}.concept-builder .concept-origin h3{font-size:clamp(2.6rem,10vw,3.8rem)}.concept-builder .concept-gifts br{display:none}.concept-builder .concept-gifts{max-width:360px}}
+/* Terceiro conceito — uma vida alcança outras vidas. */
+.concept-capital .concept-origin h3{font-size:clamp(2.8rem,4.4vw,5rem);line-height:1.03}
+.concept-capital-mark{width:160px;height:44px;margin-top:22px}
+.concept-capital-mark svg{display:block;width:100%;height:100%}
+@media(max-width:760px){.concept-capital .concept-origin{min-height:0;margin-bottom:28px}.concept-capital .concept-origin h3{font-size:clamp(2.6rem,10vw,3.8rem)}}
