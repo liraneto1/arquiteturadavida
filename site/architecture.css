@@ -1,8 +1,8 @@
 /* Seção 05 — a parte visível e as dimensões submersas da vida. */
 .architecture{position:relative;display:grid;grid-template-columns:30% minmax(0,1fr);align-items:center;gap:0;padding:38px 5% 24px 6%;background:#090f0f;border-top:1px solid #aaa39538;border-bottom:1px solid #aaa39538;isolation:isolate;overflow:clip}
 .architecture-copy{position:relative;z-index:2;padding:20px 0}
-.architecture .eyebrow{font-size:.65rem;letter-spacing:.15em;color:#c8b993;margin-bottom:36px}
-.architecture .eyebrow:after{display:none}
+.architecture>.eyebrow{grid-column:1/-1;text-align:left;font-size:.75rem;letter-spacing:.23em;color:var(--ivory);margin-bottom:36px}
+.architecture>.eyebrow:after{display:inline-block;width:45px;margin-left:20px;border-top:1px solid var(--gold)}
 .architecture h2{font-size:clamp(2.9rem,4.4vw,5rem);line-height:.98;margin-bottom:20px}
 .architecture .lead{font-size:clamp(1.3rem,1.8vw,1.8rem);line-height:1.25}
 .architecture-rule{display:block;width:44px;border-top:2px solid var(--gold);margin-top:25px}
@@ -20,4 +20,4 @@
 .architecture-note span{display:block;color:#c6a265;font-size:.7rem;margin-top:4px}
 @media(min-width:1600px){.architecture-diagram{min-height:580px}.architecture-dimensions details{min-height:80px}}
 @media(max-width:1000px) and (min-width:761px){.architecture{grid-template-columns:31% 1fr;padding-left:5%;padding-right:3%}.architecture-diagram{min-height:410px}.architecture h2{font-size:2.8rem}.architecture-dimensions{padding-left:66%}.architecture-dimensions summary{letter-spacing:.12em;font-size:.58rem;padding-left:12px}.architecture-dimensions details{min-height:58px}}
-@media(max-width:760px){.architecture{display:block;padding:40px 0 28px}.architecture-copy{padding:0 7%}.architecture .eyebrow{margin-bottom:26px}.architecture h2{font-size:clamp(2.8rem,10vw,4rem)}.architecture .lead{font-size:1.5rem}.architecture-rule{margin-top:22px}.architecture-diagram{min-height:370px;margin-top:10px}.architecture-iceberg{left:-24%;width:124%;object-fit:cover;object-position:center}.architecture-dimensions{padding:20px 5% 20px 61%}.architecture-dimensions details{min-height:54px}.architecture-dimensions summary{font-size:clamp(.52rem,1.9vw,.68rem);letter-spacing:.12em;padding:17px 0 17px 12px;min-height:50px}.architecture-dimensions summary:before{width:23vw}.architecture-dimensions details p{font-size:.75rem;padding-left:12px}.architecture-note{padding:0 7%;margin-top:20px}}
+@media(max-width:760px){.architecture{display:block;padding:40px 0 28px}.architecture-copy{padding:0 7%}.architecture>.eyebrow{margin:0 7% 36px;letter-spacing:.16em}.architecture>.eyebrow:after{width:25px;margin-left:12px}.architecture h2{font-size:clamp(2.8rem,10vw,4rem)}.architecture .lead{font-size:1.5rem}.architecture-rule{margin-top:22px}.architecture-diagram{min-height:370px;margin-top:10px}.architecture-iceberg{left:-24%;width:124%;object-fit:cover;object-position:center}.architecture-dimensions{padding:20px 5% 20px 61%}.architecture-dimensions details{min-height:54px}.architecture-dimensions summary{font-size:clamp(.52rem,1.9vw,.68rem);letter-spacing:.12em;padding:17px 0 17px 12px;min-height:50px}.architecture-dimensions summary:before{width:23vw}.architecture-dimensions details p{font-size:.75rem;padding-left:12px}.architecture-note{padding:0 7%;margin-top:20px}}
