@@ -13,7 +13,7 @@ Identificações numeradas conforme a ordem de leitura. Estilo compartilhado em 
 - 09 · PADRÕES
 - 10 · MINHA JORNADA
 - 11 · OBSERVAR
-- 12 · CONSCIÊNCIA EM PRÁTICA
+- 12 · CONSTRUIR
 - 13 · PROPÓSITO
 - 14 · O CRIADOR / NOSSA COSMOVISÃO
 - 15 · O PRESENTE
