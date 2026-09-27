@@ -1,0 +1,12 @@
+/* Minha Jornada — cinco etapas explicadas a partir do modelo visual. */
+.my-journey{min-height:610px;gap:42px;padding-bottom:36px}
+.my-journey .eyebrow{text-align:left}
+.my-journey .awakening-path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.my-journey .awakening-path:before{left:10%;right:10%}
+.my-journey .awakening-path li{min-width:0;text-align:center;gap:14px}
+.my-journey .awakening-path li:not(:last-child):after{left:calc(100% + 8px)}
+.journey-step-copy h3{font:500 .7rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px;color:#f2efe7}
+.journey-step-copy p{font:.85rem/1.55 var(--sans);letter-spacing:0;text-transform:none;color:#d7d1c5;margin:0;text-wrap:pretty}
+.my-journey:after{background:linear-gradient(90deg,#090f0ff2 0%,#090f0fbb 26%,transparent 52%,#090f0f44 73%,#090f0fe0 100%),linear-gradient(0deg,#090f0ff5,transparent 65%)}
+@media(max-width:1050px) and (min-width:761px){.my-journey .awakening-path{gap:16px}.journey-step-copy h3{font-size:.6rem;letter-spacing:.1em}.journey-step-copy p{font-size:.78rem}.my-journey .awakening-path li:not(:last-child):after{left:calc(100% + 4px)}}
+@media(max-width:760px){.my-journey{min-height:0;gap:24px}.my-journey .awakening-path{grid-template-columns:1fr;gap:23px;margin-left:0}.my-journey .awakening-path:before{left:23px;right:auto;bottom:calc(100% / 5 - 24px)}.my-journey .awakening-path li{text-align:left;gap:20px;align-items:flex-start}.my-journey .awakening-icon{margin-top:0}.journey-step-copy{padding-top:4px}.journey-step-copy h3{font-size:.7rem;margin-bottom:6px}.journey-step-copy p{font-size:.85rem}.my-journey:after{background:linear-gradient(180deg,#090f0faa 0%,#090f0f66 22%,#090f0f44 36%,#090f0f 52%)}.my-journey .awakening-cycle{margin-top:65px}}
