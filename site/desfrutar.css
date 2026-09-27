@@ -1,0 +1,33 @@
+/* Seção 13 — presença, gratidão e alegria. */
+.section.desfrutar{padding:32px 6% 42px;background:radial-gradient(ellipse at 82% 22%,#d9ba7829,transparent 43%),#f5f2e9}
+.desfrutar .desfrutar-label{display:flex;align-items:center;gap:22px;margin:0 0 54px;font:500 .75rem/1.6 var(--sans);letter-spacing:.23em}
+.desfrutar .desfrutar-label:after{content:'';width:45px;height:1px;background:#b59452}
+.desfrutar-intro-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:8%;align-items:center}
+.desfrutar-headline{font:400 clamp(2.8rem,4.25vw,4.7rem)/1.06 var(--serif);letter-spacing:-.035em;margin:0}
+.desfrutar-headline .desfrutar-muted-line{display:block;color:#918a7b;font-size:.68em;line-height:1.2;margin-bottom:17px}
+.desfrutar-headline em{color:#a77a3d}
+.desfrutar-copy{border-left:1px solid #b5945260;padding-left:35px;position:relative}
+.desfrutar-copy:before{content:'';width:7px;height:7px;border-radius:50%;background:#b59452;position:absolute;left:-4px;top:0}
+.desfrutar-copy p{font:1.62rem/1.45 var(--serif);margin:0;color:#655d50}
+.desfrutar-copy strong{font-weight:400;color:#1a1b17}
+.desfrutar-moments{display:grid;grid-template-columns:repeat(3,1fr);gap:42px;margin-top:65px;padding-top:30px;border-top:1px solid #b5945240}
+.desfrutar-moment{display:grid;grid-template-columns:70px 1fr;align-items:center;gap:23px}
+.desfrutar-icon{display:grid;place-items:center;width:70px;height:70px;border:1px solid #b5945270;border-radius:50%;color:#a77a3d;background:#faf7ee}
+.desfrutar-icon svg{width:35px;height:35px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.desfrutar-moment p{margin:0;font:1.65rem/1.15 var(--serif)}
+.desfrutar-moment small{display:block;font:500 .59rem/1.5 var(--sans);letter-spacing:.2em;color:#a77a3d;margin-bottom:9px}
+.desfrutar-moment:last-child .desfrutar-icon{background:#a77a3d;color:#fffaf0;border-color:#a77a3d}
+.desfrutar-end-line{margin:37px 0 0;text-align:center;font:italic 1.25rem var(--serif);color:#8c734d}
+@media(max-width:760px){.section.desfrutar{padding:28px 7% 32px}
+.desfrutar .desfrutar-label{font-size:.6875rem;letter-spacing:.16em;margin-bottom:35px}
+.desfrutar-intro-layout{grid-template-columns:1fr;gap:30px}
+.desfrutar-headline{font-size:2.9rem}
+.desfrutar-copy{padding-left:23px}
+.desfrutar-copy p{font-size:1.4rem}
+.desfrutar-moments{grid-template-columns:1fr;margin-top:35px;gap:25px}
+.desfrutar-moment{grid-template-columns:60px 1fr;gap:22px}
+.desfrutar-icon{width:60px;height:60px}
+.desfrutar-moment p{font-size:1.5rem}
+.desfrutar-end-line{font-size:1.15rem}
+}
+
