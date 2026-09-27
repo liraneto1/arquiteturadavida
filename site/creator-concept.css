@@ -1,0 +1,38 @@
+/* Seção 04 — O Criador: origem e presentes da vida. */
+.section.creator-concept-design{padding:32px 6% 48px;background:radial-gradient(ellipse at 18% 57%,#d6b36a18,transparent 40%),#f5f2e9}
+.creator-concept-label{display:flex;align-items:center;gap:22px;margin:0;font:500 .75rem/1.6 var(--sans);letter-spacing:.23em}
+.creator-concept-label:after{content:'';width:45px;height:1px;background:#b59452}
+.creator-concept-top{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.creator-concept-count{font:.65rem var(--sans);letter-spacing:.2em;color:#8f7b56}
+.creator-concept-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:8%;align-items:center;margin-top:55px}
+.creator-concept-origin h3{font:400 clamp(4rem,7.5vw,8rem)/.92 var(--serif);letter-spacing:-.05em;margin:0;color:#9f998d}
+.creator-concept-origin h3 em{color:#a77a3d;display:block}
+.creator-concept-symbol{height:150px;width:200px;margin-top:30px;position:relative;display:grid;place-items:center}
+.creator-concept-symbol svg{width:200px;height:150px}
+.creator-concept-message{padding-left:42px;border-left:1px solid #b5945240}
+.creator-concept-statement{font:400 clamp(2.1rem,3.1vw,3.2rem)/1.1 var(--serif);letter-spacing:-.025em;margin:0 0 30px}
+.creator-concept-statement em{color:#a77a3d}
+.creator-concept-received{font:500 .65rem/1.5 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#8d744c;margin:0 0 14px}
+.creator-concept-gifts{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;list-style:none;padding:0;margin:0}
+.creator-concept-gifts li{display:flex;gap:14px;align-items:flex-start;padding:23px 0;border-top:1px solid #b5945240;font:1.4rem/1.2 var(--serif)}
+.creator-concept-gifts svg{width:30px;height:30px;flex-shrink:0;fill:none;stroke:#a77a3d;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.creator-concept-gifts span{display:block}
+.creator-concept-gifts em{color:#a77a3d;font-style:normal}
+@media(max-width:760px){.section.creator-concept-design{padding:28px 7% 32px}
+.creator-concept-label{font-size:.6rem;letter-spacing:.13em;gap:10px}
+.creator-concept-label:after{width:24px}
+.creator-concept-count{font-size:.58rem;white-space:nowrap}
+.creator-concept-top{gap:12px}
+.creator-concept-layout{grid-template-columns:1fr;gap:30px;margin-top:40px}
+.creator-concept-origin{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.creator-concept-origin h3{font-size:3.9rem}
+.creator-concept-symbol{width:100px;height:110px;margin:0;flex-shrink:0}
+.creator-concept-symbol svg{width:100%;height:100%}
+.creator-concept-message{border:0;padding:0}
+.creator-concept-statement{font-size:2.25rem;margin-bottom:27px}
+.creator-concept-gifts{gap:0 18px}
+.creator-concept-gifts li{font-size:1.2rem;flex-direction:column;gap:12px;padding:20px 0}
+.creator-concept-gifts svg{width:27px;height:27px}
+}
+
+@media(max-width:380px){.creator-concept-origin h3{font-size:3.25rem}.creator-concept-symbol{width:80px;height:95px}.creator-concept-top{gap:8px}.creator-concept-label{font-size:.55rem;letter-spacing:.1em}}
